@@ -27,21 +27,4 @@ function enableInput() {
 }
 
 // Function to submit the user's input
-document.getElementById('submitBtn').addEventListener('click', function() {
-    const userInput = document.getElementById('userInput').value.trim();
-    if (userInput) {
-        // Append the user input to the story
-        const storyText = document.getElementById('storyText');
-        storyText.textContent += ' ' + userInput;
-
-        // Reset input field and timer
-        document.getElementById('userInput').value = '';
-        document.getElementById('userInput').disabled = true;
-        document.getElementById('submitBtn').disabled = true;
-        timeLeft = 600;
-        startTimer();
-    }
-});
-
-// Initial call to start the timer
-startTimer();
+document.getElementById('submit
